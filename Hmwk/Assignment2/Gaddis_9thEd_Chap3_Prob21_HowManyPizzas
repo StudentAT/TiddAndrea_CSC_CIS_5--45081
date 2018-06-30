@@ -1,0 +1,39 @@
+/*
+ * Assignment 2 Gaddis Chapter 3 Problem 21
+ */
+
+/* 
+ * File:   main.cpp
+ * Author: Andrea Tidd
+ * Created on June 28, 2018, 6:04 PM
+ * Purpose: Calculate how many pizzas are needed for a party
+ */
+
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main(int argc, char** argv) 
+{
+    double int people, diameter, radius, area, sliceArea, slices;
+    const double PI = 3.14159;
+    
+    sliceArea = 14.125;  //14.125 inches
+    area = PI * pow(radius, 2.0);
+    
+    cout << "How many people are attending the party? ";
+    cin >> people;
+    
+    cout << "Enter the diameter of the pizza in inches. ";
+    cin >> diameter;
+    
+    radius = diameter/2;
+    slices = (PI * radius *radius)/sliceArea;
+    
+    cout << "The number of pizzas needed for the party is ";
+    cout << (people * 4)/((PI * radius *radius)/sliceArea);
+
+    return 0;
+}
+

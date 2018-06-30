@@ -1,0 +1,29 @@
+/*
+ * Assignment 2 Gaddis Chapter 3 Problem 10
+ */
+
+/* 
+ * File:   main.cpp
+ * Author: Andrea Tidd
+ * Created on June 28, 2018, 4:23 PM
+ * Purpose: Find out how much insurance a person should purchase.
+ */
+
+#include <iostream>
+
+using namespace std;
+
+int main(int argc, char** argv) 
+{
+    double replacement, percentage;
+    
+    percentage = 0.80;   //80 percent
+    
+    cout << "Enter how much the replacement cost would be. $";
+    cin >> replacement;
+    
+    cout << "The amount of insurance that should be purchased is $" << replacement * percentage;
+
+    return 0;
+}
+

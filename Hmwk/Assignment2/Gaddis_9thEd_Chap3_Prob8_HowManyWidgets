@@ -1,0 +1,33 @@
+/*
+ * Assignment 2 Gaddis Chapter 3 Problem 8
+ */
+
+/* 
+ * File:   main.cpp
+ * Author: Andrea Tidd
+ * Created on June 28, 2018, 3:08 PM
+ * Purpose: Find out how many widgets fit on a pallet
+ */
+
+#include <iostream>
+
+using namespace std;
+
+int main(int argc, char** argv) 
+{
+    double Pallet, TotalWeight, WidgetWeight, Widgets;
+    
+    WidgetWeight = 12.5;   // 12.5 pounds
+    Widgets = (TotalWeight - Pallet)/WidgetWeight;
+    
+    cout << "What is the weight of a pallet in pounds? ";
+    cin >> Pallet;
+    
+    cout << "What is the combined weight of the widgets and pallet in pounds? ";
+    cin >> TotalWeight;
+    
+    cout << "The amount of widgets on a pallet is ";
+    cout << (TotalWeight - Pallet)/WidgetWeight;
+
+    return 0;
+}

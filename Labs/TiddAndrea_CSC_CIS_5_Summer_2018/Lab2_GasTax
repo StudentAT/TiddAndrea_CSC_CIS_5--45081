@@ -1,0 +1,56 @@
+/*
+ * Lab Assignment 2
+ */
+
+/* 
+ * File:   main.cpp
+ * Author: Andrea Tidd
+ * Created on June 29, 2018, 11:18 AM
+ * Purpose: calculate the base price, total tax, percentage of tax, and oil company profit range on gas.
+ */
+
+#include <iostream>
+
+using namespace std;
+
+int main(int argc, char** argv) 
+{
+    double Fed, State, SalesPercent, Sales, Oil, Oil2, Base, Pump, PumpCents, TotalTax;
+    
+    Fed = 18.4;   // 18.4 cents per gallon
+    State = 41.7;   // 41.7 cents per gallon
+    SalesPercent = 0.0225;   // 2.25 percent
+    PumpCents = Pump * 100;    // Get pump price in cents.
+    Base = ((PumpCents - Fed - State)/1.0225)/100;
+    TotalTax = Pump - Base;
+    Oil = 0.07;   // 7 cents per gallon.
+    Oil2 = 0.065;    ///6.5 percent
+    
+    cout << "Enter price paid per gallon at the pump. $";
+    cin >> Pump;
+    
+    PumpCents = Pump * 100;    // Get pump price in cents.
+    Base = ((PumpCents - Fed - State)/1.0225)/100;
+    
+    cout << "The base price of this gallon of gas is $";
+    cout << Base << "\n";   // Convert back to dollars
+    
+    Base = ((PumpCents - Fed - State)/1.0225)/100;
+    TotalTax = Pump - Base;
+    
+    cout << "The total tax on this gallon of gas is $";
+    cout << TotalTax << "\n";
+    
+    PumpCents = Pump * 100;    // Get pump price in cents.
+    Base = ((PumpCents - Fed - State)/1.0225)/100;
+    
+    cout << "The percentage of the price that is taxed on this gallon is ";
+    cout << (TotalTax/Base) * 100 << "%\n";
+    
+    Oil2 = 0.065;    ///6.5 percent
+    
+    cout << "The Oil company profit range is $" << Oil << " per gallon to $" << Base * Oil2 << " per gallon";
+   
+
+    return 0;
+}

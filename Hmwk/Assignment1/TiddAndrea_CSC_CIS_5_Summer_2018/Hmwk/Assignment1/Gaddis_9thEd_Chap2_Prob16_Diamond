@@ -1,0 +1,47 @@
+/*
+ * Assignment 1 Gaddis Chapter 2 Problem 16
+ */
+
+/* 
+ * File:   main.cpp
+ * Author: Andrea Tidd
+ *Created on June 24, 2018, 5:06 PM
+ * Purpose: Diamond Pattern
+ */
+
+#include <iostream>
+
+using namespace std;
+
+int main(int argc, char** argv) 
+{
+    int row, c, k, space = 1;
+        // n = Number of rows
+        // space = number of spaces before *
+    
+        cout << "\n Enter Number of Rows : ";
+        cin >> row;
+        space = row - 1;
+        for(k = 1; k <= row; k++)
+        {
+                for (c = 1; c <= space; c++)
+                        cout<<" ";
+                space--;
+                for (c = 1; c <= 2*k-1; c++)
+                        cout << "*";
+                cout << "\n";
+        } 
+        space = 1; 
+        for(k = 1; k <= row - 1; k++)
+        {
+                for (c = 1; c<= space; c++)
+                        cout << " ";
+                space++; 
+                for (c = 1 ; c <= 2*(row-k)-1; c++)
+                        cout << "*";
+                cout << "\n";
+        }
+
+    return 0;
+}
+

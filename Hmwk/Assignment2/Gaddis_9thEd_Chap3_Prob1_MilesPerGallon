@@ -1,0 +1,34 @@
+/*
+ * Assignment 2 Gaddis Chapter 3 Problem 1
+ */
+
+/* 
+ * File:   main.cpp
+ * Author: Andrea Tidd
+ * Created on June 28, 2018, 3:08 PM
+ * Purpose: Find out how many miles per gallon for a car
+ */
+
+#include <iostream>
+
+using namespace std;
+
+int main(int argc, char** argv) 
+{
+   int Gallons;
+   double Miles, MPG;
+    
+    MPG = Miles/Gallons;
+    
+    cout << "How many gallons does the tank hold? ";
+    cin >> Gallons;
+    
+    cout << "How many miles can the car drive on a full tank? ";
+    cin >> Miles;
+    
+    cout << "The miles per gallon of the car is ";
+    cout << Miles/Gallons;
+    
+    return 0;
+}
+

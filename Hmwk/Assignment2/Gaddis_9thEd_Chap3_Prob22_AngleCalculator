@@ -1,0 +1,39 @@
+/*
+ * Assignment 2 Gaddis Chapter 3 Problem 22
+ */
+
+/* 
+ * File:   main.cpp
+ * Author: Andrea Tidd
+ * Created on June 28, 2018, 6:21 PM
+ * Purpose: Use an angle in radians to find the sin, cos, and tan.
+ */
+
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main(int argc, char** argv) 
+{
+    double radians;
+    
+    cout << "Enter the angle in radians. ";
+    cin >> radians;
+    cout << "\n";
+
+    cout << "The sin of the angle is ";
+    cout << sin(radians);
+    cout << "\n";
+    
+    cout << "The cos of the angle is ";
+    cout << cos(radians);
+    cout << "\n";
+    
+    cout << "The tan of the angle is ";
+    cout << tan(radians);
+    
+    
+    return 0;
+}
+

@@ -1,0 +1,29 @@
+/*
+ * Assignment 1 Gaddis Problem 1
+ */
+
+/* 
+ * File:   main.cpp
+ * Author: Andrea Tidd
+ * Purpose: Sum of two numbers
+ * Created on June 23, 2018, 9:07 PM
+ */
+
+#include <iostream>
+using namespace std;
+
+int main(int argc, char** argv) 
+{
+    int firstNumber, secondNumber, Total;
+    
+    firstNumber = 50;
+    secondNumber = 100;
+    Total = firstNumber + secondNumber;
+    
+    // Calculate the sum  
+    
+    cout << firstNumber << " + " <<  secondNumber << " = " << Total;
+
+    return 0;
+}
+

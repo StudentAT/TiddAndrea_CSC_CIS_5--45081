@@ -1,0 +1,29 @@
+/*
+ * Assignment 1 Gaddis Chapter 2 Problem 13
+ */
+
+/* 
+ * File:   main.cpp
+ * Author: Andrea Tidd
+ * Created on June 24, 2018, 8:33 PM
+ * Purpose: Calculate the price of a circuit board
+ */
+
+#include <iostream>
+
+using namespace std;
+
+int main(int argc, char** argv) 
+{
+    double percentprofit, cost, sellingprice;
+    
+    percentprofit = 0.35;   // 35 percent
+    cost = 14.95;           // $14.95
+    sellingprice = (percentprofit * cost) + cost;
+    
+    cout << "The selling price of a circuit board that costs $14.95 is ";
+    cout << "$" << sellingprice;
+
+    return 0;
+}
+

@@ -1,0 +1,31 @@
+/*
+ * Assignment 1 Gaddis Chapter 2 Problem 3
+ */
+
+/* 
+ * File:   main.cpp
+ * Author: Andrea Tidd
+ * Created on June 24, 2018, 3:26 PM
+ * Purpose: Sales Tax
+ */
+
+#include <iostream>
+
+using namespace std;
+
+int main(int argc, char** argv) 
+{
+    double statetax = 0.04;  // 4 percent
+    double countytax = 0.02; // 2 percent
+    double purchase = 95,    // 95 dollars
+           total = statetax + countytax;
+
+    statetax = purchase * statetax;
+    countytax = purchase * countytax;
+    total = statetax + countytax;
+
+    cout << total << endl;
+    
+    return 0;
+}
+

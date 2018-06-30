@@ -1,0 +1,35 @@
+/*
+ * Assignment 1 Gaddis Problem 15
+ */
+
+/* 
+ * File:   main.cpp
+ * Author: Andrea Tidd
+ * Purpose: Triangle Pattern
+ *
+ * Created on June 24, 2018, 11:37 AM
+ */
+
+#include <iostream>
+
+using namespace std;
+
+int main(int argc, char** argv) 
+{
+    int i, j, k;
+    for (i=1; i<=4; i++)
+    {
+        for (j=4; j>=i; j--)
+        {
+            cout<<" ";
+        }
+        for (k=1; k<=(2*i-1); k++)
+        {
+            cout<<"*";
+        }
+        cout<<"\n";
+    }
+ 
+    return 0;
+}
+

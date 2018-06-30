@@ -1,0 +1,36 @@
+/*
+ * Assignment 2 Gaddis Chapter 3 Problem 20
+ */
+
+/* 
+ * File:   main.cpp
+ * Author: Andrea Tidd
+ * Created on June 28, 2018, 5:31 PM
+ * Purpose: Calculate the number of slices a pizza can be split into.
+ */
+
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main(int argc, char** argv) 
+{
+    double diameter, radius, area, sliceArea;
+    const double PI = 3.14159;
+    
+    sliceArea = 14.125;  //14.125 inches
+    area = PI * radius * radius;
+    
+    cout << "Enter the diameter of the pizza in inches. ";
+    cin >> diameter;
+    
+    radius = diameter/2;
+    
+    cout << "The number of slices the pizza can be divided into is ";
+    cout << (PI * radius *radius)/sliceArea;
+    
+
+    return 0;
+}
+

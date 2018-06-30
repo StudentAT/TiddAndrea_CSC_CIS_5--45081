@@ -1,0 +1,43 @@
+/*
+ * Assignment 2 Gaddis Chapter 3 Problem 3
+ */
+
+/* 
+ * File:   main.cpp
+ * Author: Andrea Tidd
+ * Created on June 28, 2018, 3:48 PM
+ * Purpose: Find the average of five test scores
+ */
+
+#include <iostream>
+
+using namespace std;
+
+int main(int argc, char** argv) 
+{
+    
+    double firstnumber, secondnumber, thirdnumber, fourthnumber, fifthnumber, average;
+
+    average = (firstnumber + secondnumber + thirdnumber + fourthnumber + fifthnumber)/5;
+            
+    cout << "Input the score of the first test. ";        
+    cin >> firstnumber;
+    
+    cout << "Input the score of the second test. ";
+    cin >> secondnumber;
+    
+    cout << "Input the score of the third test. ";
+    cin >> thirdnumber;
+    
+    cout << "Input the score of the fourth test. ";
+    cin >> fourthnumber;
+    
+    cout << "Input the score of the fifth test. ";
+    cin >> fifthnumber;
+    
+    cout << "The test average is ";
+    cout << (firstnumber + secondnumber + thirdnumber + fourthnumber + fifthnumber)/5;
+    
+    return 0;
+}
+

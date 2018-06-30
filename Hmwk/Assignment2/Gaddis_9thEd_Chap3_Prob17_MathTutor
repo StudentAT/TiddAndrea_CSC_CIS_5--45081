@@ -1,0 +1,39 @@
+/*
+ * Assignment 2 Gaddis Chapter 3 Problem 17
+ */
+
+/* 
+ * File:   main.cpp
+ * Author: Andrea Tidd
+ * Created on June 28, 2018, 4:57 PM
+ * Purpose: create a pause after a math question
+ */
+
+#include <iostream>
+#include <cstdlib>
+
+using namespace std;
+
+int main(int argc, char** argv) 
+{
+    int firstnumber, secondnumber, answer;
+    
+    firstnumber = rand()%300;
+    secondnumber = rand()%300;
+    answer = firstnumber + secondnumber;
+    
+    cout << "  " << firstnumber << endl;
+    cout << "+ " << secondnumber << endl;
+    cout << "------------" << endl;
+    
+    cout << "Solve the question, enter answer, and then press enter to check your answer. ";
+    cin >> answer;
+    
+    cout << "  " << firstnumber << endl;
+    cout << "+ " << secondnumber << endl;
+    cout << "------------" << endl;
+    cout << "= " << firstnumber + secondnumber;
+
+    return 0;
+}
+

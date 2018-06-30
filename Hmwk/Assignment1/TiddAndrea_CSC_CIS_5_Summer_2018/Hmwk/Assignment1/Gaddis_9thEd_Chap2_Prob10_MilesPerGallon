@@ -1,0 +1,31 @@
+/*
+ * Assignment 1 Gaddis Chapter 2 Problem 10
+ */
+
+/* 
+ * File:   main.cpp
+ * Author: Andrea Tidd
+ * Created on June 24, 2018, 6:28 PM
+ * Purpose: Calculate Miles per gallon
+ */
+
+#include <iostream>
+
+using namespace std;
+
+int main(int argc, char** argv) 
+{
+    int Miles, Gallons, MPG;
+    
+    Miles = 375;
+    Gallons = 15;
+    MPG = Miles / Gallons;
+    
+    // Calculate the MPG  
+    
+    cout << "Miles per Gallon = ";
+    cout << Miles << " / " <<  Gallons << " = " << MPG;
+
+    return 0;
+}
+

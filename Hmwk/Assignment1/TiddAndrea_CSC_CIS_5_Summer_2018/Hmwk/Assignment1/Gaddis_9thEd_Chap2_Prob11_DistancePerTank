@@ -1,0 +1,42 @@
+/*
+ * Assignment 1 Gaddis Chapter 2 Problem 11
+ */
+
+/* 
+ * File:   main.cpp
+ * Author: Andrea Tidd
+ * Created on June 24, 2018, 6:49 PM
+ * Purpose: Distance per Tank in town and on highway
+ */
+
+#include <iostream>
+
+using namespace std;
+
+int main(int argc, char** argv) 
+{
+    {   double Gallonstown, averagetownmiles, distancetown, Gallonshighway, averagehighwaymiles, distancehighway;
+    
+    Gallonstown = 20;
+    averagetownmiles = 23.5;
+    distancetown = Gallonstown * averagetownmiles;
+    
+    // Calculate the distance per tank in town  
+    
+    cout << "Distance per Tank of Gas in town = ";
+    cout << Gallonstown << " * " <<  averagetownmiles << " = " << distancetown << "\n\n";
+
+    
+    Gallonshighway = 20;
+    averagehighwaymiles = 28.9;
+    distancehighway = Gallonshighway * averagehighwaymiles;
+    
+    // Calculate the distance per tank on the highway 
+    
+    cout << "Distance per Tank of Gas on highway = ";
+    cout << Gallonshighway << " * " <<  averagehighwaymiles << " = " << distancehighway;
+    
+    }
+    
+    return 0;
+}

@@ -1,0 +1,38 @@
+/*
+ * Assignment 1 Gaddis Chapter 2 Problem 5
+ */
+
+/* 
+ * File:   main.cpp
+ * Author: Andrea Tidd
+ *Created on June 24, 2018, 5:44 PM
+ * Purpose: Average of values
+ */
+
+#include <iostream>
+
+using namespace std;
+
+int main(int argc, char** argv) 
+{
+    int firstNumber, secondNumber, thirdnumber, fourthnumber, fifthnumber, Total, average;
+    
+    firstNumber = 28;
+    secondNumber = 32;
+    thirdnumber = 37;
+    fourthnumber = 24;
+    fifthnumber = 33;
+    Total = firstNumber + secondNumber + thirdnumber + fourthnumber + fifthnumber;
+    average = Total/5;
+            
+    // Calculate the sum  
+    
+    cout << firstNumber << " + " <<  secondNumber << " + " << thirdnumber << " + " << fourthnumber << " + " << fifthnumber << " = " << Total << "\n\n";
+    
+    // Calculate the average
+    cout << "The average is " << "\n";
+    cout << Total << "/" << 5 << " = " << average;
+
+    return 0;
+}
+

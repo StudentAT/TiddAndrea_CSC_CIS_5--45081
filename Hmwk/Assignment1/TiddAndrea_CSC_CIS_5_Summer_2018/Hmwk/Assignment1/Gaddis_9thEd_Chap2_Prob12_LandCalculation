@@ -1,0 +1,29 @@
+/*
+ * Assignment 1 Gaddis Chapter 2 Problem 12
+ */
+
+/* 
+ * File:   main.cpp
+ * Author: Andrea Tidd
+ * Created on June 24, 2018, 7:42 PM
+ * Purpose: Land Calculations; Calculate the acres
+ */
+
+#include <iostream>
+
+using namespace std;
+
+int main(int argc, char** argv) 
+{
+    int oneacre, landinfeet, totalacres;
+    
+    oneacre = 45670;      // 45,670 feet
+    landinfeet = 391876;  // 391,876 feet
+    totalacres = landinfeet/oneacre;
+    
+    cout << "Number of acres in a tract of land = ";
+    cout << landinfeet << "/" << oneacre << " = " << totalacres << " acres";
+
+    return 0;
+}
+
