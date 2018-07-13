@@ -1,0 +1,53 @@
+/*
+ * Assignment 4 Gaddis Chapter 5 Problem 13
+ */
+
+/* 
+ * File:   main.cpp
+ * Author: Andrea Tidd
+ * Created on July 9, 2018, 9:08 PM
+ * Purpose: The program should distinguish the greatest and lowest values of a list of numbers entered by the user.
+ */
+
+#include <iostream>
+
+using namespace std;
+
+int main(int argc, char** argv) 
+{
+    
+    int Number = 0;
+    int Greatest;
+    int Least;
+    int Tracker = 0;   // Tracks the highest and lowest values entered.
+    
+    while (Number != -99)
+    {
+        cout << "Enter an integer. Enter -99 to stop entering. ";
+        cin >> Number;
+    
+    
+    if (Tracker == 0)
+        {
+            Greatest = Number;
+            Least = Number;
+        }
+        
+        else
+            {
+                if (Number > Greatest && Number != -99)
+                    Greatest = Number;
+                        
+                else if (Number < Least && Number != -99)
+                    Least = Number;
+            }
+    
+
+    }
+            
+        cout << "The greatest number entered is " << Greatest << endl;
+        cout << "The smallest number entered is " << Least << endl;
+    
+    
+    return 0;
+}

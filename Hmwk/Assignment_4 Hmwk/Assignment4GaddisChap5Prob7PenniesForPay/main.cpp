@@ -1,0 +1,48 @@
+/*
+ * Assignment 4 Gaddis Chapter 5 Problem 7
+ */
+
+/* 
+ * File:   main.cpp
+ * Author: Andrea Tidd
+ * Created on July 8, 2018, 3:59 PM
+ * Purpose: Calculate the pay if the rate doubles every day.
+ */
+
+#include <iostream>
+
+using namespace std;
+
+int main(int argc, char** argv) 
+{
+    int Days = 1;
+    
+    double Salary = 0.01;  // One penny written in dollar increments.
+    double Earnings;
+    double Total = 0.0;
+    
+        cout << "Enter the number of days worked. ";
+        cin >> Days;
+    
+    while (Days < 1)
+        {
+            cout << "Cannot be less than one day. Please re-enter the number of days. ";
+            cin >> Days;
+        }
+    
+    
+    for ( Earnings = 1; Earnings <= Days; Earnings++)
+        {
+        cout << "Day " << Earnings << " you earned $" << Salary << "\n";
+            Salary *= 2;
+            Total += Salary;
+    }
+    
+        cout << "The total earnings is $" << Total << endl;
+    
+    
+    
+
+    return 0;
+}
+
